@@ -1,0 +1,15 @@
+
+{{#if conocido}}
+<h1>Bienvenido</h1>
+<img src="images/yo.jpg" alt="yo" width="50px" height="50px">
+<p>Hola {{nombre}} <a href="/salir">Salir</a></p>
+{{/if}}
+
+{{#unless conocido}}
+<h1>No te conozco</h1>
+<p>Inicia Sesión</p>
+<form action="/Ingresar" method="post">
+    <input type="text"
+    name="nombre"><button>Ingresar</button>    
+</form>
+{{/unless}}
